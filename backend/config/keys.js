@@ -1,8 +1,6 @@
+require('dotenv').config();
 module.exports = {
-    mongoURI: "mongodb+srv://salman:123@cluster0.07dz1.mongodb.net/?retryWrites=true&w=majority",
-    secretOrKey: "secret"
+    mongoURI: process.env.MONGOURI,
+    secretOrKey: process.env.KEY
 };
-
-
-
 
